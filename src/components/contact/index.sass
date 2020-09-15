@@ -1,0 +1,122 @@
+.block_contact
+	padding: 60px 0 0 0
+	background: #f6f3f2
+	.block-title
+		padding-bottom: 20px
+	.left
+		// background: #ffffff
+		background-image: url('../img/contact/contact-1.png')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		// box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+		padding: 28px
+		border-radius: 10px
+		@media screen and ( max-width: 576px )
+			padding: 0
+		.logo
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-bottom: 30px
+		.title
+			padding-bottom: 30px
+			@media screen and ( max-width: 576px )
+				padding: 20px
+			h2
+				font-size: 20px
+				color: #333333
+				text-transform: uppercase
+				font-weight: 700
+		.card-body
+			ul 
+				padding: 0
+				list-style: none
+				@media screen and ( max-width: 576px )
+					padding: 20px 20px
+				li
+					display: flex
+					padding-bottom: 20px
+					@media screen and ( max-width: 576px )
+						padding-bottom: 20px
+					em 
+						color: #333333 
+					p
+						font-size: 14px
+						color: #333333
+						padding-left: 10px
+						font-weight: 700
+	.block_form
+		background: #ffffff
+		padding: 30px
+		.text
+			padding-bottom: 20px
+			@media screen and ( max-width: 576px )
+				padding-top: 30px
+			p
+				font-weight: 700
+				font-size: 18px
+		.wrap-form
+			@media screen and(max-width:1025px)
+				margin: 0
+				padding: 0 10px
+			.frm-btnwrap
+				position: absolute
+				bottom: 28px
+				right: 0
+				// @media screen and(max-width:1025px)
+				// 	margin: 0 !important
+				@media screen and(max-width:767px)
+					position: static
+					display: block
+				.frm-btn
+					input
+						width: 215px
+						height: 40px
+						color: #ffffff
+						background: #c80916
+						cursor: pointer
+						font-size: 16px
+						font-weight: 400
+						text-align: center
+						border: none
+						// margin-right: 10px
+						margin-top: 30px
+						&:nth-last-child(2)
+							display: none
+						@media screen and ( max-width:1024px  )
+							input 
+								padding: 0 15px
+			.form-group
+				margin: 5px 0 20px 0
+				span
+					color: #b2b2b2
+					font-size: 13px
+					&.fa-exclamation-triangle
+						color: firebrick
+				input,textarea
+					padding-left: 20px
+					border: 1px solid #f3f3f3
+					height: 42px
+					width: 100%
+					color: #333
+					background: #f3f3f3
+					transition: .3s all ease-in-out
+
+					&:focus
+						outline: none
+						box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+				label
+					color: #666666
+					font-size: 14px
+					font-weight: 400
+					margin-bottom: 5px
+				textarea
+					height: 8em
+					padding: 10px 0 0 20px
+
+	.map-wrapper
+		padding-top: 30px
+		padding-bottom: 60px
+		@media screen and ( max-width: 576px )
+			padding-top: 60px
