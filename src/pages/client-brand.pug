@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Khách hàng'
+	- var bodyClass = 'client-brand-page'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/index.pug
+	include ../components/client-brand/index.pug
+	include ../components/pagination/index.pug
