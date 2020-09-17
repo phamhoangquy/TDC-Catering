@@ -139,6 +139,42 @@ function swiperInit() {
             },
         },
     });
+    var brandSwiper = new Swiper(".block_history .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: ".block_history .nav-arrow-next",
+            prevEl: ".block_history .nav-arrow-prev",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
+    });
     var suggestionsSwiper = new Swiper(".slide-food-service-suggestions .swiper-container", {
         // Optional parameters
         speed: 1205,

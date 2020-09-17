@@ -1,0 +1,242 @@
+.block_about
+	background-image: url('../img/about/bg-about-1.png')
+	background-repeat: no-repeat
+	background-position: center
+	padding: 60px 0 90px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 30px 0
+	.text
+		// padding-top: 20px
+		p
+			color: #000000
+			font-size: 18px
+			text-align: center
+			padding-top: 20px
+			@media screen and ( max-width: 576px )
+				font-size: 14px
+	.content-about
+		p
+			color: #e82429
+			font-size: 25px
+			position: relative
+			padding-top: 30px
+			@media screen and ( max-width: 1024.98px )
+				-webkit-box-orient: vertical
+				// -webkit-line-clamp: 8
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+			@media screen and ( max-width: 576px )
+				text-align: center
+				font-size: 16px
+			&::before
+				content: ''
+				width: 50px
+				height: 1px
+				background: #e82429
+				position: absolute
+				top: 0
+				transform: translateY(-50%)
+				left: 0
+	.card_img
+		// border-width: 10px
+		// border-color: rgb(255, 255, 255)
+		// background-color: rgb(255, 255, 255)
+		// box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15)
+	
+	.block_history
+		padding: 60px 0 0 0
+		.about-swiper-wrapper
+			position: relative
+		.nav-arrow-prev,.nav-arrow-next
+			position: absolute
+			width: 40px
+			height: 40px
+			top: 40%
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: .3s all  ease-in-out
+			@media screen and ( max-width: 400px )
+				top: 40%
+			&:hover
+				// color: #c7931c
+			em
+				transition: .3s all  ease-in-out
+				// font-size: 72px
+				// @media screen and ( max-width: 576px )
+				// 	font-size: 48px
+		.nav-arrow-next
+			right: -60px
+			cursor: pointer
+			@media screen and ( max-width: 1439px)
+				right: -45px
+			@media screen and ( max-width: 1350px)
+				right: 0
+				
+			@media screen and ( max-width: 767px)
+				right: 15px
+			@media screen and ( max-width: 576px)
+				right: 0
+				top: 120px
+				
+		.nav-arrow-prev
+			left: -60px
+			cursor: pointer
+			@media screen and ( max-width: 1439px)
+				left: -45px
+			@media screen and ( max-width: 1350px)
+				left: 0
+			@media screen and ( max-width: 767px)
+				left: 15px
+			@media screen and ( max-width: 576px)
+				left: 0
+				top: 120px
+			
+		.swiper-container
+			// margin: 0
+			// @media screen and ( max-width: 1350px)
+			// 	margin: 0 20px
+			// @media screen and ( max-width: 1024.98px)
+			// 	margin: 0
+		.swiper-wrapper
+			.swiper-slide
+				.wrapper
+					background-color: rgb(232, 36, 41)
+					width: 100%
+					height: 80px
+					font-size: 32px
+					font-weight: bold;
+					text-transform: uppercase
+					display: flex
+					justify-content: center
+					align-items: center
+					color: #ffffff
+					border-radius: 10px 10px 0 0
+				.caption_about
+					padding: 25px
+					background: #edf3f6
+					border-radius: 0 0 10px 10px
+					p
+						font-size: 16px
+						color: rgb(102, 102, 102)
+						text-align: center
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 8
+						-o-text-overflow: ellipsis
+						display: -webkit-box
+						overflow: hidden
+						text-overflow: ellipsis
+						height: 150px
+						line-height: 25px
+
+// section 2
+.block_about-2
+	background-image: url('../img/about/bg-about-2.png')
+	background-repeat: no-repeat
+	background-position: center
+	padding: 100px 0 80px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 30px 0
+	.block-title
+		.head-title
+			h1
+				text-align: left
+	.vision-mission
+		border-top: 1px solid #d7d7d7
+		ul
+			display: flex
+			padding: 0
+			list-style: none
+			margin-top: 30px
+			li
+				.title_vm
+					h2
+						font-size: 18px
+						color: #e82429
+						text-transform: uppercase
+				.caption_vm
+					p
+						font-size: 16px
+						color: #000000
+						padding-right: 30px
+						padding-top: 10px
+						@media screen and ( max-width: 1024.98px )
+							padding-right: 15px
+							
+						@media screen and ( max-width: 576px )
+							padding-right: 20px
+
+// section 3
+.block_about-3
+	.text
+		padding-top: 20px
+		p
+			text-align: center
+
+// section 4
+.block_about-4
+	background-image: url('../img/about/shape-about-4.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 60px 0 60px 0
+	.card_img
+		border-radius: 10px
+		.img
+			img
+				border-radius: 10px
+	.content_about-4
+		padding: 60px 30px
+		@media screen and ( max-width: 1024.98px )
+			padding: 20px 0
+		@media screen and ( max-width: 576px )
+			padding: 0 
+		.block-title
+			padding-bottom: 0
+			.head-title
+				h1
+					text-align: left
+					font-weight: 800
+		.caption_about-4
+			padding-top: 15px
+			p
+				font-size: 16px
+
+// section 5
+.block_about-5
+	background-image: url('../img/about/bg-about-5.png')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 60px 0 90px 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 30px 0
+	.row
+		display: flex
+		justify-content: center
+		align-items: center
+	.text
+		padding-top: 10px
+		p
+			text-align: center
+			padding-right: 100px
+			padding-left: 100px
+			@media screen and ( max-width: 576px )
+				padding-right: 20px
+				padding-left: 20px
+				text-align: justify
+	.icon_about-5
+		display: flex
+		justify-content: center
+		align-items: center
+		ul
+			list-style: none
+			padding: 0
+			display: flex
+			li
+				padding-left: 20px
+				.img_icon
+					img
+						background: none
