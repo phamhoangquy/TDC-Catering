@@ -138,4 +138,17 @@ function swiperInit() {
             },
         },
     });
+    var suggestionsSwiper = new Swiper(".slide-food-service-suggestions .swiper-container", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".slide-food-service-suggestions",
+            type: "bullets",
+            clickable: "true"
+        }
+    });
 }

@@ -1,0 +1,95 @@
+.block_service-suggestions
+	padding: 60px 0 60px 0
+	.block-title
+		padding-bottom: 0
+	.head-title-zone
+		.title
+			ul
+				li
+					border: none
+					background-color: rgb(255, 255, 255)
+					box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15)
+					a
+						color: #333333
+					&:hover
+						background: #e82429
+						a
+							color: #ffffff
+	.row
+		&:nth-child(2n+1)
+			.col-lg-5
+				order: 2
+			@media screen and ( max-width: 767px )
+				.col-lg-5
+					order: inherit
+			@media screen and ( max-width: 576px )
+				.col-lg-5
+					order: inherit
+	.suggestions
+		margin-top: 50px
+		@media screen and ( max-width: 576px )
+			margin-top: 30px
+	.swiper-wrapper
+		.swiper-slide
+			.img
+				img
+					width: 100%
+					height: 100%
+					max-height: 100%
+					object-fit: cover
+	.swiper-pagination-bullet-active 
+		background: #e82429
+	.food-suggestions
+		padding: 80px 50px
+		@media screen and ( max-width: 1024.98px )
+			padding: 0 20px
+		@media screen and ( max-width: 576px )
+			padding: 0 20px
+		.title_suggestions
+			h2
+				color: #e82429
+				font-size: 24px
+				text-transform: uppercase
+				font-weight: 700
+		.caption_suggestions
+			padding-top: 15px
+			p
+				color: #666666
+				font-size: 18px
+				@media screen and ( max-width: 767px )
+					text-align: justify
+				@media screen and ( max-width: 576px )
+					text-align: justify
+		.title_zone_suggestions
+			padding-top: 20px
+			h3
+				color: #333333
+				font-size: 18px
+				font-weight: 800
+		.icon_suggestions
+			ul
+				padding: 0
+				list-style: none
+				li
+					display: flex
+					padding-top: 10px
+					span
+						color: #e82429
+						font-size: 18px
+					p
+						color: #666666
+						font-size: 18px
+						padding-left: 10px
+		.btn-view-more
+			padding-top: 40px
+			a
+				text-transform: uppercase
+				font-size: 14px
+				color: #ffffff
+				background: #000000
+				padding: 10px
+				font-weight: 700
+				border-radius: 5px
+				box-shadow: 0px 5px 25px 0px rgba(232, 36, 41, 0.25)
+				&:hover
+					background: #d11c20
