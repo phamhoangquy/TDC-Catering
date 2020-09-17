@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('.offcanvas-wrap').fadeOut().removeClass('offcanvas-open')
     })
     swiperInit();
+    showBackToTop();
 });
 
 const mainMenuMobileMapping = new MappingListener({
@@ -151,4 +152,21 @@ function swiperInit() {
             clickable: "true"
         }
     });
+}
+
+function showBackToTop() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#back-to-top').addClass('active');
+        } else {
+            $('#back-to-top').removeClass('active');
+        }
+    });
+
+    $("#back-to-top").on("click", function(e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        })
+    })
 }
