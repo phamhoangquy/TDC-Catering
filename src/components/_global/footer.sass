@@ -36,28 +36,95 @@
 	background-size: cover
 	background-repeat: no-repeat
 
-	.social-link
-		ul
-			text-align: center
-			list-style: none
-			padding-left: 0
-			margin-left: -10px
-			li
-				display: inline-block
-				margin-left: 10px
-				a
-					width: 40px
-					height: 40px
+	.footer.card
+		width: 100%
+		.card_title
+			h4
+				font-size: 18px 
+				font-weight: 800
+				color: #000000
+				padding-bottom: 20px
+				text-transform: uppercase
+				padding-left: 115px
+				@media screen and ( max-width: 1024.98px )
+					padding-left: 0
+					text-align: left
+					font-size: 14px
+				@media screen and ( max-width: 576px )
+					padding-left: 0
+					text-align: left
+		.card_body
+			p
+				font-size: 16px
+				color: #666666
+			ul 
+				padding: 0
+				list-style: none
+				li
 					display: flex
-					align-items: center
+					padding-top: 20px
+					padding-left: 115px
+					@media screen and ( max-width: 1024.98px )
+						padding-left: 0
+					span
+						color: #000000
+						font-size: 16px
+						padding-right: 5px
+					p
+						font-size: 16px
+						color: #666666
+						@media screen and ( max-width: 1024.98px )
+							font-size: 12px
+						@media screen and ( max-width: 576px )
+							font-size: 12px
+		.card_body_icon
+			p
+				font-size: 16px
+				color: #666666
+			ul 
+				padding: 0
+				list-style: none
+				text-align: center
+				@media screen and ( max-width: 576px )
+					text-align: left
+				li
+					display: flex
+					padding-top: 20px
 					justify-content: center
-					border-radius: 50%
-					border: 1px solid #221f1f
-					color: #221f1f
-					font-size: 21px
-					img
-						max-width: 18px
-
+					align-items: center
+					span
+						color: #000000
+						font-size: 16px
+						padding-right: 5px
+					p
+						font-size: 16px
+						color: #666666
+			.social-link
+				ul
+					list-style: none
+					padding-left: 0
+					margin-left: -10px
+					li
+						display: inline-block
+						margin-left: 10px
+						a
+							width: 40px
+							height: 40px
+							display: flex
+							align-items: center
+							justify-content: center
+							border-radius: 50%
+							border: 1px solid #221f1f
+							color: #221f1f
+							font-size: 21px
+							img
+								max-width: 18px
+			.notification
+				padding-top: 40px
+				text-align: center
+				@media screen and ( max-width: 576px )
+					padding-left: 0
+					text-align: left
 	.policy-link
 		margin-top: 40px
 		ul
