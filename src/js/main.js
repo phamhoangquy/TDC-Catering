@@ -31,6 +31,92 @@ const webNavMobileMapping = new MappingListener({
 }).watch();
 
 function swiperInit() {
+    var brandSwiper = new Swiper(".home_s-4 .home-slide-client", {
+        // Optional parameters
+        speed: 1000,
+
+        autoplay: {
+            delay: 2000
+        },
+        navigation: {
+            nextEl: '.home_s-4 .nav-arrow-next',
+            prevEl: '.home_s-4 .nav-arrow-prev',
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 2,
+
+            },
+            768: {
+                slidesPerView: 4,
+
+            },
+            1025: {
+                slidesPerView: 4,
+
+            },
+            1440: {
+                slidesPerView: 4,
+
+            },
+        },
+
+    });
+    var brandSwiper = new Swiper(".home_promotion_slide .slide-promotion", {
+        // Optional parameters
+        speed: 1000,
+
+        autoplay: {
+            delay: 2000
+        },
+        // navigation: {
+        //     nextEl: '.home_s-4 .nav-arrow-next',
+        //     prevEl: '.home_s-4 .nav-arrow-prev',
+        // },
+        pagination: {
+            el: ".home_s-4-pagination",
+            type: "bullets",
+            clickable: "true",
+        },
+        breakpointsInverse: true,
+        spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 1,
+
+            },
+            768: {
+                slidesPerView: 3,
+
+            },
+            1025: {
+                slidesPerView: 3,
+
+            },
+            1440: {
+                slidesPerView: 3,
+
+            },
+        },
+
+    });
     var brandSwiper = new Swiper(".block_service-detail-3 .swiper-container", {
         // Optional parameters
         speed: 1000,
@@ -175,7 +261,7 @@ function swiperInit() {
             },
         },
     });
-    var suggestionsSwiper = new Swiper(".slide-food-service-suggestions .swiper-container", {
+    var suggestionsSwiper = new Swiper(".block_service-suggestions .slide-food-service-suggestions", {
         // Optional parameters
         speed: 1205,
         slidesPerView: 1,
@@ -183,7 +269,7 @@ function swiperInit() {
             delay: 3000
         },
         pagination: {
-            el: ".slide-food-service-suggestions",
+            el: ".block_service-suggestions-pagination",
             type: "bullets",
             clickable: "true"
         }
