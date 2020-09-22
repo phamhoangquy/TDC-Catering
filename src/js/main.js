@@ -53,11 +53,11 @@ function swiperInit() {
 
             },
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
 
             },
             768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
 
             },
             1025: {
