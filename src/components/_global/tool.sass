@@ -1,0 +1,87 @@
+.block__tool
+	position: fixed
+	top: 120px
+	right: 0
+	z-index: 99
+	opacity: 1
+	transition: ease-in-out all .3s
+	background: rgba(#101010, .9)
+	width: 240px
+	height: 250px
+	ul
+		padding: 0
+		list-style: none
+		li
+			display: flex
+			width: 240px
+			height: 54px
+			padding: 10px
+			&:nth-child(1)
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+			&:nth-child(2)
+				a
+					display: flex
+					justify-content: center
+					align-items: center
+			&:nth-child(3)
+				height: 70px
+			&:nth-child(4)
+				margin-top: 2px
+				height: 70px
+			&:hover
+				cursor: pointer
+				background: #cb1a1d
+				a
+					color: #ffffff
+				i
+					border-right: 1px solid #ffffff
+			a
+				color: #ffffff
+				p
+					padding-left: 15px
+			i
+				color: #ffffff
+				border-right: 1px solid #4d4d4d
+				padding-right: 15px
+			// &:first-child
+			// 	position: relative
+			// 	display: flex
+			// 	justify-content: center
+			// 	align-items: center
+			// 	flex-direction: row-reverse
+			// 	&:hover
+			// 		.caption
+			// 			width: auto
+			// 			height: 48px
+			// 			border-top: 1px solid #ffffff
+			// 			border-bottom: 1px solid #ffffff
+			// 			border-left: 1px solid #ffffff
+			// 			opacity: 1
+			.icon
+				em 
+					color: #fff
+			// .caption 
+			// 	padding: 0 15px
+			// 	transition: .3s all  ease-in-out
+			// 	font-size: r(18px)
+			// 	font-weight: 700
+			// 	position: absolute
+			// 	top: 50%
+			// 	transform: translateY(-50%)
+			// 	right: 100%
+			// 	display: flex
+			// 	justify-content: center
+			// 	align-items: center
+			// 	opacity: 0
+			// 	color: #ffffff
+			// 	white-space: nowrap
+			// 	&:hover
+			// 		color: #ffffff
+					
+	&.active
+		opacity: 0
+		visibility: hidden
+		transition: .3s all ease-in-out

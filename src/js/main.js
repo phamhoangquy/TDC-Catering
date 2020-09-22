@@ -31,6 +31,19 @@ const webNavMobileMapping = new MappingListener({
 }).watch();
 
 function swiperInit() {
+    var homerSwiper = new Swiper(".home-banner .swiper-container", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".home-banner-pagination",
+            type: "bullets",
+            clickable: "true"
+        }
+    });
     var brandSwiper = new Swiper(".home_s-4 .home-slide-client", {
         // Optional parameters
         speed: 1000,
