@@ -2,6 +2,8 @@
 	background-image: url('../img/index/s-3/Shape-3.png')
 	background-repeat: no-repeat
 	background-position: center
+	background: #f7f4f3
+	padding: 90px 0 90px 0
 	.block-title
 		padding-top: 60px
 	.row
@@ -14,11 +16,12 @@
 		position: absolute
 		width: 40px
 		height: 40px
-		top: 30%
+		top: 40%
 		display: flex
 		justify-content: center
 		align-items: center
 		transition: .3s all  ease-in-out
+		border: none
 		@media screen and ( max-width: 400px )
 			top: 40%
 			
@@ -27,7 +30,7 @@
 				// color: #ffffff
 		em
 			transition: .3s all  ease-in-out
-			font-size: 18px
+			font-size: 30px
 	.nav-arrow-next
 		right: -60px
 		@media screen and ( max-width: 1439px)
@@ -63,8 +66,8 @@
 			display: flex
 			justify-content: center
 			align-items: center
-			width: 180px
-			height: 180px
+			width: 220px
+			height: 220px
 			border-width: 10px
 			border-color: rgb(255, 255, 255)
 			border-radius: 50%
@@ -86,6 +89,7 @@
 					max-height: 100px
 
 	.home_promotion_slide
+		padding-top: 90px
 		.news-swiper-wrapper
 			position: relative
 		.nav-arrow-prev,.nav-arrow-next
@@ -142,9 +146,10 @@
 				background: #ffffff
 				.card-body
 					.content
-						padding: 20px
+						padding: 40px
 						background: #ffffff
 						box-shadow: 0 3px 20px 0 rgba(0,0,0,.1)
+						background: transparent
 						.date
 							color: #999999
 							font-size: 14px
@@ -152,13 +157,14 @@
 							padding-top: 15px
 							a 
 								font-size: 18px
-								color: #000000
+								color: #222222
 								-webkit-box-orient: vertical
 								-webkit-line-clamp: 3
 								display: -webkit-box
 								overflow: hidden
 								text-overflow: ellipsis
 						.icon
+							display: none
 							padding-top: 40px
 							span
 								font-size: 18px
@@ -168,6 +174,8 @@
 								a
 									color: #e82429
 							.icon
+								display: block
+								border: 1px solid transparent
 								span
 									color: #e82429
 		.swiper-pagination-bullet-active 

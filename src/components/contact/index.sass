@@ -48,73 +48,215 @@
 						font-weight: 700
 	.block_form
 		background: #ffffff
-		padding: 30px
 		.text
-			padding-bottom: 20px
+			padding: 20px 0 20px 0
 			@media screen and ( max-width: 576px )
-				padding-top: 30px
+				padding: 20px 0 20px 0
 			p
 				font-weight: 700
 				font-size: 18px
-		.wrap-form
-			@media screen and(max-width:1025px)
-				margin: 0
-				padding: 0 10px
-			.frm-btnwrap
-				position: absolute
-				bottom: 28px
-				right: 0
-				// @media screen and(max-width:1025px)
-				// 	margin: 0 !important
-				@media screen and(max-width:767px)
-					position: static
-					display: block
-				.frm-btn
-					input
-						width: 215px
-						height: 40px
-						color: #ffffff
-						background: #c80916
-						cursor: pointer
-						font-size: 16px
-						font-weight: 400
-						text-align: center
-						border: none
-						// margin-right: 10px
-						margin-top: 30px
-						&:nth-last-child(2)
-							display: none
-						@media screen and ( max-width:1024px  )
-							input 
-								padding: 0 15px
-			.form-group
-				margin: 5px 0 20px 0
-				span
-					color: #b2b2b2
-					font-size: 13px
-					&.fa-exclamation-triangle
-						color: firebrick
-				input,textarea
-					padding-left: 20px
-					border: 1px solid #f3f3f3
-					height: 42px
-					width: 100%
-					color: #333
-					background: #f3f3f3
-					transition: .3s all ease-in-out
-
-					&:focus
-						outline: none
-						box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
-				label
-					color: #666666
-					font-size: 14px
+	.wrap-form-left
+		// margin-bottom: 60px
+		// @media screen and ( max-width: 1600px )
+		// 	margin-bottom: 60px
+		// @media screen and(max-width:1025px)
+		// 	margin: 0
+		// 	padding: 0 10px
+		// @media screen and ( max-width: 1024.98px )
+		// 	margin-bottom: 60px
+		// @media screen and ( max-width: 767px )
+		// 	margin-bottom: 0
+		// @media screen and ( max-width: 576px )
+		// 	margin-bottom: 0
+		.frm-btnwrap
+			// position: absolute
+			bottom: -47px
+			right: 15px
+			display: flex
+			justify-content: center
+			align-items: center
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			@media screen and ( max-width: 1024.98px )
+				bottom: -70px
+			@media screen and ( max-width: 768px )
+				bottom: -70px
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			@media screen and ( max-width: 576px )
+				margin-top: 30px
+			.frm-btn
+				width: 140px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #111111
+				border-radius: 5px
+				a
+					color: #ffffff
+					cursor: pointer
+					font-size: 16px
 					font-weight: 400
-					margin-bottom: 5px
-				textarea
-					height: 8em
-					padding: 10px 0 0 20px
+					display: flex
+					justify-content: center
+					align-items: center
+					border: none
+					// margin-right: 10px
+					border-radius: 5px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						a 
+							padding: 0 15px
+					span
+						padding-left: 25px
+				&:hover
+					background: #c80916
+					cursor: pointer
+					a
+						color: #ffffff
+							
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input
+				padding-left: 20px
+				border: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #f3f3f3
+				border-radius: 5px
+				transition: .3s all ease-in-out
 
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				padding-left: 20px
+				padding-top: 10px
+				border: 1px solid #f3f3f3
+				height: 178px
+				width: 100%
+				color: #333
+				background: #f3f3f3
+				border-radius: 5px
+				transition: .3s all ease-in-out
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+	.wrap-form-right
+		padding-top: 57px
+		// margin-bottom: 60px
+		// @media screen and ( max-width: 1600px )
+		// 	margin-bottom: 60px
+		// @media screen and(max-width:1025px)
+		// 	margin: 0
+		// 	padding: 0 10px
+		// @media screen and ( max-width: 1024.98px )
+		// 	margin-bottom: 60px
+		// @media screen and ( max-width: 767px )
+		// 	margin-bottom: 0
+		// @media screen and ( max-width: 576px )
+		// 	margin-bottom: 0
+		.frm-btnwrap
+			// position: absolute
+			bottom: -47px
+			right: 15px
+			display: flex
+			justify-content: flex-end
+			// @media screen and(max-width:1025px)
+			// 	margin: 0 !important
+			@media screen and ( max-width: 1024.98px )
+				bottom: -70px
+			@media screen and ( max-width: 768px )
+				bottom: -70px
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			@media screen and ( max-width: 576px )
+				margin-top: 30px
+			.frm-btn
+				width: 140px
+				height: 40px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #111111
+				border-radius: 5px
+				a
+					color: #ffffff
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					display: flex
+					justify-content: center
+					align-items: center
+					border: none
+					// margin-right: 10px
+					border-radius: 5px
+					&:nth-last-child(2)
+						display: none
+					@media screen and ( max-width:1024px  )
+						a 
+							padding: 0 15px
+					span
+						padding-left: 25px
+				&:hover
+					background: #c80916
+					cursor: pointer
+					a
+						color: #ffffff
+							
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			input
+				padding-left: 20px
+				border: 1px solid #f3f3f3
+				height: 42px
+				width: 100%
+				color: #333
+				background: #f3f3f3
+				border-radius: 5px
+				transition: .3s all ease-in-out
+
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				padding-left: 20px
+				padding-top: 10px
+				border: 1px solid #f3f3f3
+				height: 178px
+				width: 100%
+				color: #333
+				background: #f3f3f3
+				border-radius: 5px
+				transition: .3s all ease-in-out
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
 	.map-wrapper
 		padding-top: 30px
 		padding-bottom: 60px
