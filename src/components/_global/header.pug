@@ -31,7 +31,7 @@ header
 							.dropdown-content
 								ul.list-reset
 									li
-										a(href="#") EN
+										a(href="") EN
 									li
 										a(href="#") VN
 					.menu-mobile-toggle
@@ -39,10 +39,16 @@ header
 				.menu-wrapper
 					.menu
 						ul.list-reset
-							li
+							li.active
 								a(href="about.html") Giới thiệu
-							li
-								a(href="service-meal.html") Dịch vụ
+							li.dropdown
+								a(href="#") Dịch vụ
+								.dropdown-menu
+									ul.list-reset-2
+										li
+											a(href="service-meal.html") Suất ăn theo yêu cầu
+										li
+											a(href="service-suggestions.html") Gợi ý suất ăn sẵn
 							li
 								a(href="client-brand.html") Khách hàng
 							li

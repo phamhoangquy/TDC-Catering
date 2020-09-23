@@ -2,7 +2,7 @@
 	padding: 60px 0 60px 0
 	background-image: url('../img/service-meal/bg-service-meal.png')
 	background-repeat: no-repeat
-	background-position: 50% -250px
+	background-position: 45% -55px
 	.block-title
 		padding-bottom: 0
 	.head-title-zone
@@ -10,14 +10,12 @@
 			ul
 				li
 					border: none
-					background-color: rgb(255, 255, 255)
 					box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15)
-					a
-						color: #333333
 					&:hover
 						background: #e82429
 						a
 							color: #ffffff
+
 	.row
 		&:nth-child(2n+1)
 			.col-lg-5
@@ -28,6 +26,18 @@
 			@media screen and ( max-width: 576px )
 				.col-lg-5
 					order: inherit
+			.swiper-pagination.block_service-suggestions-pagination.swiper-pagination-clickable.swiper-pagination-bullets
+				position: initial
+				text-align: left
+				@media screen and ( max-width: 576px )
+					text-align: center
+		&:nth-child(2n)
+			.food-suggestions
+				padding: 60px 0 0 30px
+				@media screen and ( max-width: 1024.98px )
+					padding: 0 20px
+				@media screen and ( max-width: 576px )
+					padding: 0 20px
 	.suggestions
 		margin-top: 50px
 		@media screen and ( max-width: 576px )
@@ -47,8 +57,12 @@
 		text-align: right
 		@media screen and ( max-width: 576px )
 			text-align: center
+		.swiper-pagination-bullet.swiper-pagination-bullet-active
+			border-radius: 50%
+		.swiper-pagination-bullet
+			border-radius: 50%
 	.food-suggestions
-		padding: 80px 50px
+		padding: 60px 30px 0 0
 		@media screen and ( max-width: 1024.98px )
 			padding: 0 20px
 		@media screen and ( max-width: 576px )
@@ -64,6 +78,7 @@
 			p
 				color: #666666
 				font-size: 18px
+				font-family: 'Nunito', sans-serif
 				@media screen and ( max-width: 767px )
 					text-align: justify
 				@media screen and ( max-width: 576px )
@@ -88,6 +103,7 @@
 						color: #666666
 						font-size: 18px
 						padding-left: 10px
+						font-family: 'Nunito', sans-serif
 		.btn-view-more
 			padding-top: 40px
 			a
@@ -95,8 +111,9 @@
 				font-size: 14px
 				color: #ffffff
 				background: #000000
-				padding: 15px 30px
+				padding: 15px 35px
 				font-weight: 700
+				font-family: 'Nunito', sans-serif
 				border-radius: 5px
 				box-shadow: 0px 5px 25px 0px rgba(232, 36, 41, 0.25)
 				&:hover

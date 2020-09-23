@@ -130,6 +130,19 @@ function swiperInit() {
         },
 
     });
+    var aboutSwiper = new Swiper(".block_about-3 .slide-about-3", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        navigation: {
+            nextEl: '.block_about-3 .nav-arrow-next',
+            prevEl: '.block_about-3 .nav-arrow-prev',
+        },
+    });
+
     var brandSwiper = new Swiper(".block_service-detail-3 .swiper-container", {
         // Optional parameters
         speed: 1000,

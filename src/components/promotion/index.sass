@@ -29,11 +29,11 @@
 		.date
 			time
 				font-size: 14px
-				color: #dadada
+				color: #999999
 		.title_promotion
 			padding-top: 10px
 			a
-				color: #e82429
+				color: #222222
 				font-size: 18px
 				font-weight: 700
 		.title_zone_promotion
@@ -43,9 +43,19 @@
 				font-size: 16px
 				font-family: 'Nunito', sans-serif
 		.icon
-			padding-top: 30px
-			span
-				color: #e82429
+			display: none
+		&:hover
+			height: 400px
+			.title_promotion
+				a
+					color: #e82429
+			.icon
+				padding-top: 30px
+				height: 400px
+				display: block
+				span
+					color: #e82429
+		
 
 	.col-lg-4
 		margin-top: 30px
@@ -59,12 +69,13 @@
 				height: 100%
 	.content-small-promotion
 		background: #ffffff
-		padding: 30px
+		padding: 20px
 		cursor: pointer
+		height: 214px
 		.date
 			time
 				font-size: 14px
-				color: #dadada
+				color: #999999
 		.caption
 			padding-top: 10px
 			a
@@ -72,3 +83,17 @@
 				color: #333333
 				font-weight: 700
 				font-family: 'Nunito', sans-serif
+		.icon
+			display: none
+			padding-top: 25px
+		&:hover
+			height: 214px
+			.caption
+				a
+					color: #e82429
+			.icon
+				display: block
+				height: 174px
+				padding-top: 25px
+				span
+					color: #e82429

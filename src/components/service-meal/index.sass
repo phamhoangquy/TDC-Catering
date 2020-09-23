@@ -2,7 +2,7 @@
 	padding: 60px 0 0 0
 	background-image: url('../img/service-meal/bg-service-meal.png')
 	background-repeat: no-repeat
-	background-position: 50% -300px
+	background-position: 45% -330px
 	// background-size: cover
 	// .background
 	// 	position: relative
@@ -24,8 +24,12 @@
 				order: 2
 				@media screen and ( max-width: 576px )
 					order: inherit
+		&:nth-child(2n)
+			.col-lg-4
+				.content-service-meal
+					margin-left: 30px
 	.service
-		margin-bottom: 30px
+		margin-bottom: 60px
 
 	.content-service-meal
 		padding: 60px 0
@@ -41,7 +45,7 @@
 			padding-top: 10px
 			h2
 				color: #e82429
-				font-size: 18px
+				font-size: 24px
 				font-weight: 700
 				text-transform: uppercase
 		.caption
@@ -51,7 +55,7 @@
 				font-family: 'Nunito', sans-serif
 				color: #666666
 				-webkit-box-orient: vertical
-				-webkit-line-clamp: 5
+				-webkit-line-clamp: 6
 				-o-text-overflow: ellipsis
 				display: -webkit-box
 				overflow: hidden
@@ -65,6 +69,7 @@
 			align-items: center
 			box-shadow: 0px 5px 25px 0px rgba(232, 36, 41, 0.25)
 			margin-top: 30px
+			border-radius: 5px
 			a
 				text-transform: uppercase
 				font-size: 14px
@@ -122,7 +127,7 @@
 			margin-bottom: 0
 		.frm-btnwrap
 			position: absolute
-			bottom: -10px
+			bottom: 17px
 			right: 15px
 			display: flex
 			justify-content: center
@@ -165,7 +170,7 @@
 						color: #ffffff
 							
 		.form-group
-			margin: 5px 0 20px 0
+			margin: 5px 0 10px 0
 			span
 				color: #b2b2b2
 				font-size: 13px
@@ -173,11 +178,11 @@
 					color: firebrick
 			input,textarea
 				padding-left: 20px
-				border: 1px solid #f3f3f3
+				border: 1px solid #ffffff
 				height: 42px
 				width: 100%
 				color: #333
-				background: #f3f3f3
+				background: #ffffff
 				border-radius: 5px
 				transition: .3s all ease-in-out
 
