@@ -42,7 +42,55 @@
             <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
             <div id="wrapper">
                 <header class="header">
-
+                    <div class="container">
+                        <div class="header-wrapper flex justify-between items-center">
+                            <div class="left-header">
+                                <div class="logo">
+                                    <portal:modulewrapper id="mdl138" runat="server" configuremoduleid="138" />
+                                </div>
+                            </div>
+                            <div class="right-header">
+                                <div class="right-top-header flex items-center justify-end">
+                                    <div class="website-nav-wrap">
+                                        <div class="website-nav">
+                                            <ul class="list-reset">
+                                                <li><a href="#">TVN</a></li>
+                                                <li><a href="#">Tokyo Deli Sushi</a></li>
+                                                <li><a href="#">Tokyo Deli Home</a></li>
+                                                <li><a href="#">Tokyo Deli Express</a></li>
+                                                <li class="active"><a href="#">Tokyo Deli Catering</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search-wrap">
+                                        <div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
+                                    </div>
+                                    <div class="language-wrap">
+                                        <div class="language dropdown"><a class="current" href="">
+                                                 VN<span class="mdi mdi-chevron-down"></span></a>
+                                            <div class="dropdown-content">
+                                                <ul class="list-reset">
+                                                    <li><a href="">EN</a></li>
+                                                    <li><a href="#">VN</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-mobile-toggle"><span class="mdi mdi-menu"></span></div>
+                                </div>
+                                <div class="menu-wrapper">
+                                    <div class="menu">
+                                        <portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offcanvas-wrap">
+                        <div class="offcanvas-bar">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
                 </header>
                 <main class="main">
                     <asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
@@ -61,7 +109,51 @@
                     </asp:Panel>
                 </main>
                 <footer class="footer">
-
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="footer-link">
+                                        <a href="#">
+                                            <span class="mdi mdi-phone"></span>
+                                            <strong>HOTLINE: 0123 456 789</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 border-left-white">
+                                    <div class="footer-link">
+                                        <a href="#">
+                                            <span class="mdi mdi-book-multiple"></span>
+                                            <strong>Tải Brochure</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4 footer card">
+                                    <portal:modulewrapper id="mdl140" runat="server" configuremoduleid="140" />
+                                </div>
+                                <div class="col-sm-4 footer card">
+                                    <portal:modulewrapper id="mdl141" runat="server" configuremoduleid="141" />
+                                </div>
+                                <div class="col-sm-4 footer card">
+                                    <portal:modulewrapper id="mdl144" runat="server" configuremoduleid="144" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="policy-link">
+                                <portal:modulewrapper id="mdl142" runat="server" configuremoduleid="142" />
+                            </div>
+                            <div class="copyright">
+                                <portal:modulewrapper id="mdl143" runat="server" configuremoduleid="143" />
+                            </div>
+                        </div>
+                    </div>
                 </footer>
                 <%--<ul>
                 <portal:welcomemessage id="WelcomeMessage" runat="server" renderaslistitem="true" listitemcss="firstnav" />
