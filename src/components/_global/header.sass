@@ -23,7 +23,7 @@ header
 					border: 1px solid #666666
 				&.active,&:hover
 					a
-						background: $main
+						background: #cd1a1e
 						border: 1px solid transparent
 						color: #fff
 
@@ -60,24 +60,29 @@ header
 					a
 						text-transform: uppercase
 						font-weight: 700
-						color: #333
+						color: #222222
+					&:hover
+						a
+							border: 1px solid transparent
+							color: #cd1a1e
 					.dropdown-menu
 						ul.list-reset-2
 							li
 								margin-left: -15px
 								min-width: 220px
 								height: 55px
-								display: flex
-								justify-content: center
-								align-items: center
+								padding: 15px 20px
 								a
+									font-weight: 400
 									color: #666666
-									font-size: 14px
+									font-size: 15px
+									text-transform: none
 								&:hover
 									cursor: pointer
 									background: #cd1a1e
 									a
 										color: #ffffff
+										font-weight: 700
 	.menu-mobile-toggle
 		margin-left: 15px
 		font-size: 24px

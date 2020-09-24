@@ -1,8 +1,21 @@
 .library_image
-	padding: 60px 0 0 0
+	padding: 60px 0 5px 0
 	background: #f6f3f2
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 5px 0
 	.container
 		margin-bottom: 30px
+		@media screen and ( max-width: 1024.98px )
+			margin-bottom: 0
+		@media screen and ( max-width: 576px )
+			margin-bottom: -30px
+	.block-title
+		@media screen and ( max-width: 576px )
+			padding-bottom: 0
+	.col-lg-6
+		.row
+			.col-lg-6
+				margin-bottom: 30px
 	.new-img
 		padding-bottom: 30px
 		@media screen and ( max-width: 576px)
@@ -16,22 +29,26 @@
 	.card_img_news_image_right
 		@media screen and ( max-width: 576px )
 			padding: 30px 0 0 0
-		@media screen and ( max-width: 1024.98px )
-			padding: 30px 0 0 0
+		// @media screen and ( max-width: 1024.98px )
+		// 	padding: 30px 0 0 0
 		.img
 			width: 100%
 			img
 				width: 100%
 	.col-lg-6
-		@media screen and ( max-width: 1024px )
-			order: 2
 		@media screen and ( max-width: 576px )
 			order: 2
 	.card_img_news_image_left
+		@media screen and ( max-width: 1024.98px )
+			margin-bottom: 30px
 		.img
 			width: 100%
 			img
 				width: 100%
+	.col-lg-6.news_image_left
+		@media screen and ( max-width: 1024.98px )
+			order: 1
+			margin-top: 30px
 	.block-item 
 		position: relative
 		cursor: pointer
@@ -52,11 +69,11 @@
 				display: flex
 				justify-content: center
 				align-items: center
-				em
+				.caption
+					font-size: 18px
 					color: #ffffff
-					padding: 15px
-					// background: rgba(#ca2530,.8)
-					border-radius: 50%
+				@media screen and ( max-width: 576px )
+					display: none
 			&:hover
 				.album
 					display: none
@@ -104,7 +121,7 @@
 				.icon
 					em
 						color: #ea2531
-						font-size: 36px
+						font-size: 39px
 						display: flex
 						justify-content: center
 						align-items: center
@@ -123,7 +140,7 @@
 							color: rgb(233, 36, 49)
 							font-weight: bold
 							// line-height: 2.833
-
+			
 		@media screen and (min-width: 1024px) 
 			&:hover 
 				.item__img-hover 

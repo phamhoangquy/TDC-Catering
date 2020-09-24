@@ -56,7 +56,7 @@
 	justify-content: center
 	align-items: center
 	@media screen and ( max-width:  1024.98px)
-		padding-top: 30px
+		padding-top: 0
 	.head-title 
 		margin-bottom: 30px
 		@media screen and ( max-width:  1024.98px)
@@ -85,18 +85,22 @@
 			padding-left: 15px
 			border-radius: 20px
 			border: 1px solid #999999
-			padding: 7px 35px
+			padding: 5px 35px
+			background: #ffffff
 			+ li
 				// border-left: 1px solid #e0e0e0
 			@media screen and ( max-width:576px)
 				margin-top: 10px
 			&:not(:last-child)
 				margin-right: 10px
+			a
+				font-size: 14px
 			&.active,&:hover
 				background: #e92431
 				border: none
 				a
 					color: #ffffff
+					font-size: 14px
 			&:hover
 				background: #e92431
 				color: #ffffff
