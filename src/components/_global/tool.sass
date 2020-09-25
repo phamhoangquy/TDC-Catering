@@ -7,7 +7,7 @@
 	transition: ease-in-out all .3s
 	background: rgba(#101010, .9)
 	width: 240px
-	height: 250px
+	height: 216px
 	ul
 		padding: 0
 		list-style: none
@@ -15,7 +15,7 @@
 			display: flex
 			width: 240px
 			height: 54px
-			padding: 10px
+			padding: 5px 20px
 			&:nth-child(1)
 				a
 					display: flex
@@ -26,24 +26,20 @@
 					display: flex
 					justify-content: center
 					align-items: center
-			&:nth-child(3)
-				height: 70px
-			&:nth-child(4)
-				margin-top: 2px
-				height: 70px
 			&:hover
 				cursor: pointer
 				background: #cb1a1d
 				a
 					color: #ffffff
-				i
+				em
 					border-right: 1px solid #ffffff
 			a
-				color: #ffffff
-				p
+				span
 					padding-left: 15px
 					font-size: 14px
-			i
+					color: #ffffff
+					display: block
+			em
 				color: #ffffff
 				border-right: 1px solid #4d4d4d
 				padding-right: 15px
@@ -86,3 +82,10 @@
 		opacity: 0
 		visibility: hidden
 		transition: .3s all ease-in-out
+
+	.ModuleContent
+		ul
+			li
+				a
+					em
+						color: #fff
