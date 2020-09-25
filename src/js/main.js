@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('.offcanvas-wrap').fadeOut().removeClass('offcanvas-open')
     })
     swiperInit();
+    wowBookInit();
     showBackToTop();
 });
 
@@ -29,6 +30,26 @@ const webNavMobileMapping = new MappingListener({
     desktopMethod: "prependTo",
     breakpoint: 1024.98,
 }).watch();
+
+function wowBookInit() {
+    $("#wowbook").wowBook({
+        width: 1240,
+        height: 800,
+        centeredWhenClosed: true,
+        hardcovers: true,
+        pageNumbers: false,
+        mouseWheel: true,
+        controls: {
+            zoomIn: "#zoomin",
+            zoomOut: "#zoomout",
+            next: "#next",
+            back: "#back",
+            first: "#first",
+            last: "#last"
+        },
+        scaleToFit: ".wowbook-wrapper"
+    });
+}
 
 function swiperInit() {
     var homerSwiper = new Swiper(".home-banner .swiper-container", {
