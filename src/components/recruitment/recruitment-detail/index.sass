@@ -1,9 +1,13 @@
 .hr-detail
-	padding: 170px 0 0 0 
+	background: #ffffff 
+	// background-image: url('/Data/Sites/1/skins/default/img/recruitment/bg-detail.png')
+	// background-repeat: no-repeat
+	// background-size: cover
+	// background-position: center
 	.hr-detail-top
 		background-color: rgb(255, 255, 255)
 		box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.15)
-		padding: 30px
+		padding: 30px 60px
 	.table-striped-detail-wrapper
 		padding-bottom: 50px
 		@media screen and ( max-width: 1024.98px)
@@ -16,6 +20,7 @@
 		h1
 			font-size: 30px
 			color: #221f1f
+			font-family: "Montserrat", sans-serif
 			@media screen and ( max-width: 1024.98px )
 				font-size: 20px
 			@media screen and ( max-width: 576px )
@@ -36,6 +41,7 @@
 				border: 1px solid #221f1f
 				color: #221f1f
 				font-size: 21px
+				margin-left: 20px
 				&:first-child
 					// background: #3b5998
 				&:nth-child(2)
@@ -68,6 +74,7 @@
 						@media screen and ( max-width: 576px )
 							width: 120px
 						.icon
+							padding-right: 10px
 							i
 								color: #e82429
 								font-size: 16px
@@ -80,7 +87,7 @@
 					td
 						font-size: 16px
 						color: #666666
-						width: 70%
+						width: 50%
 						&:hover
 							cursor: pointer
 							color: #e82429
@@ -251,6 +258,21 @@
 					a
 						color: #e82429
 						border-bottom: 1px solid #e82429
+.middle-fullwidth
+	.block_recruitment-1
+		background: #ffffff!important
+	.hr-detail
+		padding: 0 60px 60px 60px!important
+	.desc-hr-detail-bottom
+		table
+			tbody
+				tr
+					td
+						&:nth-child(1)
+							height: 40px
+						&:nth-child(2)
+							height: 50px
+
 // .button-wrapper-recruitment
 // 	width: 100%
 // .apply-form
