@@ -21,6 +21,7 @@
 			font-size: 25px
 			position: relative
 			padding-top: 30px
+			padding-right: 30px
 			@media screen and ( max-width: 1024.98px )
 				-webkit-box-orient: vertical
 				// -webkit-line-clamp: 8
@@ -31,6 +32,7 @@
 			@media screen and ( max-width: 576px )
 				text-align: center
 				font-size: 16px
+				padding-right: 0
 			&::before
 				content: ''
 				width: 50px
@@ -45,7 +47,15 @@
 		// border-color: rgb(255, 255, 255)
 		// background-color: rgb(255, 255, 255)
 		// box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15)
-	
+		.img
+			max-width: 100%
+			width: 520px
+			max-height: 100%
+			height: 440px
+			img
+				width: 100%
+				height: 100%
+				border: 10px solid #ffffff
 	.block_history
 		padding: 60px 0 0 0
 		.about-swiper-wrapper
@@ -65,6 +75,7 @@
 				// color: #c7931c
 			em
 				transition: .3s all  ease-in-out
+				font-size: 24px
 				// font-size: 72px
 				// @media screen and ( max-width: 576px )
 				// 	font-size: 48px
@@ -157,6 +168,7 @@
 						font-size: 18px
 						color: #e82429
 						text-transform: uppercase
+						font-weight: 900
 				.caption_vm
 					p
 						font-size: 16px
@@ -169,9 +181,19 @@
 							
 						@media screen and ( max-width: 576px )
 							padding-right: 20px
-
+	.card_img
+		.img
+			img
+				border: 10px solid #ffffff
 // section 3
 .block_about-3
+	background-image: url('/Data/Sites/1/skins/default/img/about/bg-value.png')
+	background-repeat: no-repeat
+	background-position: 50% -15px
+	padding-top: 40px
+	overflow: hidden
+	@media screen and ( max-width: 1200px )
+		overflow: hidden
 	.text
 		padding-top: 20px
 		p
@@ -200,6 +222,7 @@
 			background: #ed202e
 			border: none
 			cursor: pointer
+			outline: none
 			em
 				color: #ffffff
 				
@@ -291,7 +314,13 @@
 	.card_img
 		border-radius: 10px
 		.img
+			max-height: 100%
+			height: 380px
+			width: 100%
+			max-width: 100%
 			img
+				width: 100%
+				height: 100%
 				border-radius: 10px
 	.content_about-4
 		padding: 60px 30px
