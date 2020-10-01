@@ -110,6 +110,10 @@
 				background-color: #b2b2b2
 			&::-webkit-scrollbar-thumb
 				background-color: #e82429
+			@media screen and ( max-width: 1024.98px )
+				height: 300px
+			@media screen and ( max-width: 576px )
+				height: 300px
 			.card_title_system
 				border-top: 1px solid #e1e1e1
 				padding: 20px 0 0 20px
@@ -204,6 +208,9 @@
 	.map-wrapper
 		// padding-top: 40px
 		margin-left: -30px
+		@media screen and ( max-width: 576px )
+			margin-left: 0
+			margin-top: 10px
 	.right-content
 		.maps
 			iframe
@@ -212,6 +219,11 @@
 				border: 1px solid #eaeaea
 				@media screen and ( max-width: 1024.98px )
 					padding-bottom: 30px
+	.col-lg-9
+		.map
+			@media screen and ( max-width: 576px )
+				padding: 30px 0 0 30px
+
 
 .filtermap
 	padding: 20px

@@ -20,6 +20,8 @@
 			align-items: center
 			justify-content: center
 			padding-bottom: 30px
+			@media screen and ( max-width: 576px )
+				padding-top: 30px
 		.title
 			padding-bottom: 30px
 			@media screen and ( max-width: 576px )
@@ -373,6 +375,9 @@
 		width: 100%
 		@media screen and ( max-width: 576px )
 			padding-top: 60px
-
+	.col-md-6
+		&:nth-child(2)
+			@media screen and ( max-width: 576px )
+				margin-top: -8px
 .btn.btn-default.frm-btn-reset
 	display: none
