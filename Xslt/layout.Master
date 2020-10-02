@@ -15,7 +15,7 @@
             <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+            <link href='https://fonts.googleapis.com/icon?family=Material+Icons' , rel='stylesheet'>
             <portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
             <portal:Favicon ID="Favicon1" runat="server" />
             <portal:ScriptLoader ID="ScriptLoader1" runat="server" />
@@ -235,6 +235,9 @@
             </portal:AutoHidePanel>
             <portal:Woopra ID="woopra11" runat="server" />
         </form>
+        <script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
+        <script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
     </body>
+
 
     </html>
