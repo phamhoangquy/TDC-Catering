@@ -217,6 +217,22 @@
 					p
 						color: #666666
 						font-size: 16px
+			@media screen and ( max-width: 1024.98px)
+				table
+					thead
+						tr
+							th
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
+					tbody
+						tr
+							td
+								&:first-child
+									display: none
+								&:nth-child(n+3)
+									display: none
 			@media screen and ( max-width: 768.98px)
 				table
 					thead

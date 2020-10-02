@@ -34,6 +34,7 @@
 			.col-lg-4
 				.content-service-meal
 					margin-left: 30px
+					
 	.service
 		margin-bottom: 60px
 	.card_img
@@ -45,16 +46,15 @@
 			img
 				height: 100%
 				width: 100%
+				object-fit: cover
 	.content-service-meal
 		padding: 60px 0
 		@media screen and ( max-width: 1024.98px )
 			padding: 20px 0
 		@media screen and ( max-width: 767px )
 			padding: 0
-			text-align: center
 		@media screen and ( max-width: 576px )
-			padding: 0
-			text-align: center
+			padding: 30px 0
 		.title-meal
 			padding-top: 10px
 			h2
@@ -149,6 +149,8 @@
 			align-items: center
 			// @media screen and(max-width:1025px)
 			// 	margin: 0 !important
+			@media screen and ( max-width: 1024.98px)
+				right: 23px
 			@media screen and(max-width:767px)
 				position: static
 				display: block
