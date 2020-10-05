@@ -12,12 +12,37 @@
 			</div>
 			<div class="wowbook-control">
 				<ul>
-					<li><a id="first" href="#"><span class="mdi mdi-chevron-double-left"></span></a></li>
-					<li><a id="back" href="#"><span class="mdi mdi-chevron-left"></span></a></li>
-					<li><a id="zoomout" href="#"><span class="mdi mdi-magnify-minus-outline"></span></a></li>
-					<li><a id="zoomin" href="#"><span class="mdi mdi-magnify-plus-outline"></span></a></li>
-					<li><a id="next" href="#"><span class="mdi mdi-chevron-right"></span></a></li>
-					<li><a id="last" href="#"><span class="mdi mdi-chevron-double-right"></span></a></li>
+					<li>
+						<a id="first" href="#">
+							<span class="mdi mdi-chevron-double-left"></span>
+						</a>
+					</li>
+					<li>
+						<a id="back" href="#">
+							<i class="ri-arrow-left-s-line"></i>
+							
+						</a>
+					</li>
+					<li>
+						<a id="zoomout" href="#">
+							<i class="ri-subtract-line"></i>
+						</a>
+					</li>
+					<li>
+						<a id="zoomin" href="#">
+							<i class="ri-add-line"></i>
+						</a>
+					</li>
+					<li>
+						<a id="next" href="#">
+							<i class="ri-arrow-right-s-line"></i>
+						</a>
+					</li>
+					<li>
+						<a id="last" href="#">
+							<span class="mdi mdi-chevron-double-right"></span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -26,9 +51,9 @@
 	<xsl:template match="NewsImages">
 		<div class="item">
 			<img>
-			<xsl:attribute name="src">
-				<xsl:value-of select="ImageUrl"></xsl:value-of>
-			</xsl:attribute>
+				<xsl:attribute name="src">
+					<xsl:value-of select="ImageUrl"></xsl:value-of>
+				</xsl:attribute>
 			</img>
 		</div>
 	</xsl:template>
