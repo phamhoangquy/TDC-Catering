@@ -68,15 +68,7 @@
                                         <div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
                                     </div>
                                     <div class="language-wrap">
-                                        <div class="language dropdown"><a class="current" href="">
-                                                 VN<span class="mdi mdi-chevron-down"></span></a>
-                                            <div class="dropdown-content">
-                                                <ul class="list-reset">
-                                                    <li><a href="">EN</a></li>
-                                                    <li><a href="#">VN</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
                                     </div>
                                     <div class="menu-mobile-toggle"><span class="mdi mdi-menu"></span></div>
                                 </div>
