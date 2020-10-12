@@ -115,20 +115,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <div class="footer-link">
-                                        <a href="#">
-                                            <span class="mdi mdi-phone"></span>
-                                            <strong>HOTLINE: 0123 456 789</strong>
-                                        </a>
-                                    </div>
+                                    <portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
                                 </div>
                                 <div class="col-sm-6 border-left-white">
-                                    <div class="footer-link">
-                                        <a href="#">
-                                            <span class="mdi mdi-book-multiple"></span>
-                                            <strong>Tải Brochure</strong>
-                                        </a>
-                                    </div>
+                                    <portal:modulewrapper id="mdl193" runat="server" configuremoduleid="193" />
                                 </div>
                             </div>
                         </div>
