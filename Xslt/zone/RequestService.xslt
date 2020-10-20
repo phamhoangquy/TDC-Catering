@@ -68,14 +68,14 @@
 						</p>
 					</div>
 					<div class="btn-view-more">
-						<a >
+						<a>
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
 							<xsl:attribute name="title">
 								<xsl:value-of select="Title"></xsl:value-of>
 							</xsl:attribute>
-							<xsl:text disable-output-escaping="yes">Tìm hiểu thêm</xsl:text>
+							<xsl:value-of disable-output-escaping="yes" select="/ZoneList/ReadMore2Text"></xsl:value-of>
 							<span class="material-icons">trending_flat</span>
 						</a>
 					</div>
