@@ -49,7 +49,15 @@
 								</p>
 							</div>
 							<div class="btn-view-more">
-								<a href="">Liên hệ</a>
+								<a>
+									<xsl:attribute name="href">
+										<xsl:value-of select="Zone[1]/News/Url"></xsl:value-of>
+									</xsl:attribute>
+									<xsl:attribute name="title">
+										<xsl:value-of select="Title"></xsl:value-of>
+									</xsl:attribute>
+									<xsl:value-of disable-output-escaping="yes" select="/ZoneList/ContactText"></xsl:value-of>
+								</a>
 							</div>
 						</div>
 					</div>
