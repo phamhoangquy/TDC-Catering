@@ -30,16 +30,22 @@
 	<xsl:template match="Zone">
 		<div class="col-6 col-md-6 col-lg-3">
 			<div class="content-home-2">
-				<div class="title-home">
-					<h2>
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+						<xsl:value-of select="Title"></xsl:value-of>
+					</xsl:attribute>
+					<div class="title-home">
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</h2>
-				</div>
-				<div class="title-zone-home">
-					<p>
-						<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
-					</p>
-				</div>
+					</div>
+					<div class="title-zone-home">
+						<span>
+							<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
+						</span>
+					</div>
+				</a>
 				<div class="card_img object-fit-img">
 					<div class="img">
 						<a>

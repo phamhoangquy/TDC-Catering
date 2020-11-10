@@ -154,10 +154,10 @@
 			background: #e82429
 			cursor: pointer
 			.title-home
-				h2
-					color: #ffffff
+				color: #ffffff
 			.title-zone-home
-				p
+				span
+					font-size: 1rem
 					color: #ffffff
 			.card_img
 				border-style: none
@@ -175,6 +175,15 @@
 						height: 100%
 		.title-home
 			padding-top: 30px
+			font-size: 24px
+			color: #e82429
+			font-family: 'Montserrat', sans-serif
+			text-align: center
+			text-transform: uppercase
+			@media screen and ( max-width: 576px )
+				font-size: 18px
+			&:hover
+				color: #ffffff
 			.title
 				font-size: 24px
 				color: #e82429
@@ -183,18 +192,17 @@
 				text-transform: uppercase
 				@media screen and ( max-width: 576px )
 					font-size: 18px
-			h2
-				font-size: 24px
-				color: #e82429
-				font-family: 'Montserrat', sans-serif
-				text-align: center
-				text-transform: uppercase
-				@media screen and ( max-width: 576px )
-					font-size: 18px
+				// font-size: 24px
+				// color: #e82429
+				// font-family: 'Montserrat', sans-serif
+				// text-align: center
+				// text-transform: uppercase
+				// @media screen and ( max-width: 576px )
+				// 	font-size: 18px
 
 		.title-zone-home
-			padding: 20px
-			p
+			span
+				padding: 20px
 				font-size: 16px
 				color: #666666
 				text-align: center
@@ -210,6 +218,7 @@
 					-o-text-overflow: ellipsis
 					display: -webkit-box
 					overflow: hidden
+					height: 115px
 					text-overflow: ellipsis
 		.card_img
 			position: absolute
@@ -237,20 +246,14 @@
 				width: 24rem
 				height: 24rem
 			@media screen and ( max-width: 768.98px )
-				width: 27rem
-				height: 27rem
+				width: 24rem
+				height: 25rem
+				bottom: -250px
 			@media screen and ( max-width: 576px )
 				bottom: -180px
 				width: 12rem
 				height: 12rem
-			@media screen and ( max-width: 500px )
-				bottom: -230px
-				width: 17rem
-				height: 17rem
-			@media screen and ( max-width: 400px )
-				bottom: -190px
-				width: 12rem
-				height: 12rem
+
 			
 			.img
 				width: 100%
