@@ -42,10 +42,71 @@ header
 						width: 130px
 	.search-wrap
 		margin: 0 15px
+		position: relative
 		.search-toggle
 			font-size: 18px
 			color: #666
 			cursor: pointer
+			display: flex
+			align-items: center
+			cursor: pointer
+			padding-top: 3px
+			span
+				font-size: 18px
+				color: #111111
+				&:hover
+					color: #cd1a1e
+			@media screen and ( max-width: 576px )
+				padding-top: 0
+		.searchbox
+			cursor: pointer
+			position: absolute
+			top: 30px
+			right: 0
+			width: 250px
+			height: 40px
+			display: flex
+			opacity: 0
+			visibility: hidden
+			transition: 0.2s all
+			&.show
+				right: 0
+				top: 40px
+				opacity: 1
+				visibility: visible
+			input
+				width: 170px
+				padding: 0 10px
+				border: 1px solid #cd1a1e
+				border-right: 0
+				&::placeholder
+					font-size: 14px
+				&:focus
+					outline: none
+			button
+				width: 40px
+				border: 0
+				@include center
+				background-color: #cd1a1e
+				span
+					color: #fff
+				&:focus
+					outline: none
+				&:hover
+					background-color: #ffffff
+					border: 2px solid #cd1a1e
+					span
+						color: #cd1a1e
+			.btn-close
+				width: 40px
+				border: 0
+				@include center
+				background-color: #e7edfb
+				cursor: pointer
+				span
+					color: #cd1a1e
+			@media screen and ( max-width: 576px )
+				right: -136px
 
 	.language
 		top: -2px
@@ -78,6 +139,7 @@ header
 						a
 							border: 1px solid transparent
 							color: #cd1a1e
+							padding-bottom: 48px
 					&.active
 						a
 							color: #cd1a1e
@@ -89,26 +151,11 @@ header
 								min-width: 220px
 								height: 55px
 								padding: 15px 20px
-								&:first-child
-									@media screen and ( max-width: 576px )
-										margin-left: -40px
-										padding: 20px
-										height: auto
-										margin-bottom: 0
-								&:nth-child(2)
-									@media screen and ( max-width: 576px )
-										margin-left: -40px
-										padding: 20px
-										margin-bottom: 0
-								// &:first-child
-								// 	@media screen and ( max-width: 576px )
-								// 		height: 0
-									
-								// &:nth-child(2)
-								// 	@media screen and ( max-width: 576px )
-								// 		height: 0
-								// 		padding: 10px 20px
-
+								@media screen and ( max-width: 576px )
+									margin-left: -40px
+									padding: 20px
+									height: auto
+									margin-bottom: 0
 								a
 									font-weight: 400
 									color: #666666

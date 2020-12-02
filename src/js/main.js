@@ -10,9 +10,16 @@ $(document).ready(function() {
     })
     swiperInit();
     wowBookInit();
+    searchToggle();
     showBackToTop();
 });
 
+function searchToggle() {
+    $('.search-toggle, .btn-close').click(function() {
+        $(this).toggleClass("click");
+        $('.searchbox').toggleClass("show");
+    })
+}
 const mainMenuMobileMapping = new MappingListener({
     selector: ".menu-wrapper",
     mobileWrapper: ".mobile-menu",
@@ -65,6 +72,7 @@ function swiperInit() {
             clickable: "true"
         }
     });
+
     var brandSwiper = new Swiper(".home_s-4 .home-slide-client", {
         // Optional parameters
         speed: 1000,
@@ -105,6 +113,7 @@ function swiperInit() {
         },
 
     });
+
     var brandSwiper = new Swiper(".home_promotion_slide .slide-promotion", {
         // Optional parameters
         speed: 1000,
@@ -151,6 +160,7 @@ function swiperInit() {
         },
 
     });
+
     var aboutSwiper = new Swiper(".block_about-3 .slide-about-3", {
         // Optional parameters
         speed: 1205,
@@ -200,6 +210,7 @@ function swiperInit() {
             },
         },
     });
+
     var brandSwiper = new Swiper(".block_service-detail-4 .swiper-container", {
         // Optional parameters
         speed: 1000,
@@ -236,6 +247,7 @@ function swiperInit() {
             },
         },
     });
+
     var brandSwiper = new Swiper(".block_service-detail-5 .swiper-container", {
         // Optional parameters
         speed: 1000,
@@ -272,6 +284,7 @@ function swiperInit() {
             },
         },
     });
+
     var brandSwiper = new Swiper(".block_history .swiper-container", {
         // Optional parameters
         speed: 1000,
@@ -308,6 +321,7 @@ function swiperInit() {
             },
         },
     });
+
     var suggestionsSwiper = new Swiper(".block_service-suggestions .slide-food-service-suggestions", {
         // Optional parameters
         speed: 1205,
@@ -320,6 +334,94 @@ function swiperInit() {
             type: "bullets",
             clickable: "true"
         }
+    });
+
+    var suggestionsSwiper = new Swiper(".service-events .slide-service-events", {
+        // Optional parameters
+        speed: 1205,
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: ".service-events-pagination",
+            type: "bullets",
+            clickable: "true"
+        }
+    });
+
+    var brandSwiper = new Swiper(".service-events-2 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: ".service-events-2 .nav-arrow-next",
+            prevEl: ".service-events-2 .nav-arrow-prev",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
+    });
+
+    var brandSwiper = new Swiper(".service-events-3 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: ".service-events-2 .nav-arrow-next",
+            prevEl: ".service-events-3 .nav-arrow-prev",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 3,
+            },
+        },
     });
 }
 

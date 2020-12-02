@@ -20,7 +20,11 @@
 		left: 0
 		object-fit: cover
 
-	
+@mixin center
+	display: flex
+	justify-content: center
+	align-items: center
+
 $main: #e82429
 
 body, html
@@ -40,6 +44,6 @@ main
 	@media screen and ( max-width: 576px)
 		padding-top: 100px
 
-@import ../../_plugins/util-scss/import.scss
+// @import ../../_plugins/util-scss/import.scss
 
 
