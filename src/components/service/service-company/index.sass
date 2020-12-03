@@ -1,0 +1,318 @@
+.service-company
+	background-image: url('../img/additional/bg.jpg')
+	background-position: 50% -450px
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 50px 0
+	@media screen and ( max-width: 1024.98px )
+		padding: 30px 0 0 0
+	@media screen and ( max-width: 576px )
+		padding: 30px 0 0 0
+	.block-title
+		.head-title
+			h1
+				color: #221f1f
+	.swiper-wrapper
+		.swiper-slide
+			.img
+				img
+					width: 100%
+					height: 100%
+					max-height: 100%
+					object-fit: cover
+	.swiper-pagination-bullet
+		background: #ffffff
+		opacity: 1
+	.swiper-pagination-bullet-active 
+		background: #e82429
+
+	.content
+		padding: 100px 30px
+		@media screen and ( max-width: 1024.98px )
+			padding: 30px 10px
+		@media screen and ( max-width: 576px )
+			padding: 30px 10px
+		.sub-title
+			padding-top: 10px
+		.description
+			padding-top: 5px
+			font-size: 18px
+			color: #666666
+
+
+.service-company-2
+	background: #f5f5f5
+	padding: 50px 0
+	.select-area
+		// @include center
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 0 450px
+		@media screen and ( max-width: 1260px )
+			padding: 0 300px
+		@media screen and ( max-width: 1024.98px )
+			padding: 0 190px
+		@media screen and ( max-width: 998.98px )
+			padding: 0 205px
+		@media screen and ( max-width: 576px )
+			padding: 0
+		p
+			font-size: 14px
+			color: #999999
+			margin-right: 20px
+		select
+			width: 215px
+			height: 40px
+			padding: 0 10px
+			border-radius: 50px
+			border: 1px solid #e0e0e0
+			@media screen and ( max-width: 1024.98px )
+				width: 190px
+	.tab-menu
+		overflow: auto
+		padding-bottom: 15px
+	.menu-food-top
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 18px 0
+		list-style: none
+		border-bottom: 1px solid #e5e5e5
+		@media screen and ( max-width: 576px )
+			white-space: nowrap
+		li
+			font-size: 14px
+			color: #999999
+			text-transform: uppercase
+			padding: 0 15px
+			display: inline
+			position: relative
+			&.active
+				color: #111111
+				font-weight: 700
+				&:before
+					content: ""
+					position: absolute
+					bottom: -25px
+					left: 42%
+					width: 12px
+					height: 12px
+					border: 2px solid #fff
+					border-radius: 50%
+					background-color: #e82429
+			&:hover
+				color: #111111
+				font-weight: 700
+			a
+				cursor: pointer
+				@media screen and ( max-width: 576px )
+					font-size: 14px
+
+	.menu-food-bottom
+		display: flex
+		justify-content: center
+		padding: 15px 0
+		list-style: none
+		overflow-x: auto
+		li
+			font-size: 14px
+			color: #999999
+			padding: 0 10px
+			position: relative
+			display: flex
+			&.active
+				color: #111111
+				font-weight: 700
+				&:before
+					content: ""
+					position: absolute
+					bottom: -8px
+					left: 30%
+					width: 40%
+					height: 1px
+					border-radius: 50%
+					background-color: #111111
+			&:hover
+				color: #111111
+			a
+				cursor: pointer
+				white-space: nowrap
+
+	.row
+		margin-right: -5px
+		margin-left: -5px
+		.col
+			flex: 0 0 20%
+			padding: 5px
+			@media screen and (max-width: 1024px)
+				flex: 1 0 50%
+			@media screen and (max-width: 768px)
+				flex: 1 0 50%
+	.food
+		margin-top: 10px
+		background-color: #fff
+		padding: 15px
+		text-align: center
+		border: 1px solid #e5e5e5
+		.card_img
+			display: flex
+			justify-content: center
+			align-items: center
+			a
+				display: block
+				height: 132px
+				width: 142px
+				max-width: 100%
+				max-height: 100%
+				img
+					width: 100%
+					height: 100%
+					object-fit: scale-down
+		.content-food
+			padding-top: 15px
+			.name-food
+				a
+					font-size: 16px
+					padding-top: 6px
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					-o-text-overflow: ellipsis
+					display: -webkit-box
+					overflow: hidden
+					text-overflow: ellipsis
+					height: 50px
+					font-weight: 700
+			.discount
+				text-decoration: line-through
+				font-size: 14px
+				color: #999999
+				padding-top: 15px
+				line-height: 14px
+			.price
+				color: #e82429
+				font-size: 16px
+				font-weight: 700
+		&:hover
+			border: 1px solid #000
+			@media screen and ( max-width: 576px )
+				padding: 20px
+	
+.service-company-3
+	.form-service
+		background-image: url('../img/service-meal/bg-form.png')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		padding: 60px 0 30px 0
+		@media screen and ( max-width: 1600px )
+			padding: 30px 0 30px 0
+		@media screen and ( max-width: 576px )
+			padding: 30px 0 30px 0
+		.form-request
+			h3
+				font-size: 30px
+				color: #ffffff
+				font-family: 'Montserrat', sans-serif
+		.desc
+			padding-top: 20px
+			p
+				font-size: 18px
+				font-family: 'Nunito', sans-serif
+				color: #ffffff
+		.wrap-form
+			margin-bottom: 60px
+			@media screen and ( max-width: 1600px )
+				margin-bottom: 60px
+			@media screen and(max-width:1025px)
+				margin: 0
+				padding: 0 10px
+			@media screen and ( max-width: 1024.98px )
+				margin-bottom: 60px
+			@media screen and ( max-width: 767px )
+				margin-bottom: 0
+			@media screen and ( max-width: 576px )
+				margin-bottom: 0
+			.frm-btnwrap
+				position: absolute
+				bottom: 17px
+				right: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				// @media screen and(max-width:1025px)
+				// 	margin: 0 !important
+				@media screen and ( max-width: 1024.98px)
+					right: 23px
+				@media screen and(max-width:767px)
+					position: static
+					display: block
+				.frm-btn
+					width: 140px
+					height: 40px
+					display: flex
+					justify-content: center
+					align-items: center
+					background: #000000
+					border-radius: 5px
+					input[type="submit"]
+						color: #ffffff
+						cursor: pointer
+						font-size: 16px
+						font-weight: 400
+						display: flex
+						padding-left: 0
+						justify-content: center
+						align-items: center
+						background: none
+						border: none
+						text-transform: uppercase
+						// margin-right: 10px
+						border-radius: 5px
+						&:nth-last-child(2)
+							display: none
+						@media screen and ( max-width:1024px  )
+							a 
+								padding: 0 15px
+						span
+							padding-left: 25px
+					&:hover
+						background: #e92431
+						cursor: pointer
+						a
+							color: #ffffff
+					a
+						display: flex
+						justify-content: center
+						align-items: center
+						color: #ffffff
+						span
+							padding-left: 15px
+			.form-group
+				margin: 5px 0 10px 0
+				span
+					color: #b2b2b2
+					font-size: 13px
+					&.fa-exclamation-triangle
+						color: firebrick
+				input,textarea
+					padding-left: 20px
+					border: 1px solid #ffffff
+					height: 42px
+					width: 100%
+					color: #333
+					background: #ffffff
+					border-radius: 5px
+					transition: .3s all ease-in-out
+
+					&:focus
+						outline: none
+						box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+				label
+					color: #666666
+					font-size: 14px
+					font-weight: 400
+					margin-bottom: 5px
+				textarea
+					height: 8em
+					padding: 10px 0 0 20px

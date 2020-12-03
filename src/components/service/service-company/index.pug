@@ -1,0 +1,112 @@
+section.service-company
+	.container
+		.block-title
+			.head-title
+				h1 Công ty
+		.row
+			.col-lg-8
+				.swiper-container.slide-service-company
+					.swiper-wrapper
+						.swiper-slide
+							.wrapper
+								a
+									img(src="./img/additional/1.png", alt="")
+						.swiper-slide
+							.wrapper
+								a
+									img(src="./img/additional/1.png", alt="")
+						.swiper-slide
+							.wrapper
+								a
+									img(src="./img/additional/1.png", alt="")
+					.swiper-pagination.service-company-pagination
+			.col-lg-4
+				.content
+					.item-icon
+						img(src="./img/additional/icon-1.png", alt="")
+					.sub-title
+						h3 Công ty
+					.description Tokyo Deli Catering - tự hào là một trong những đơn vị cung cấp dịch vụ ẩm thực lưu động đa dạng cho đến nhựng bữa sự kiện một cách hoàn hảo trọn vẹn
+
+section.service-company-2
+	.container
+		.block-title
+			.head-title
+				h2 Sản phẩm
+		.select-area
+			p Chọn khu vực:
+			select
+				option(value="")
+					a(href="#") TP. Hồ Chí Minh
+				option(value="")
+					a(href="#") Hà Nội
+
+		.tab-menu.tab-panels
+			ul.tab-navigation-food.menu-food-top
+				li.active
+					a(href="javascript:void(0)" data-type='tab-1') Menu 1
+				li
+					a(href="javascript:void(0)" data-type='tab-2') Menu 2
+				li
+					a(href="javascript:void(0)" data-type='tab-3') Menu 3
+				li
+					a(href="javascript:void(0)" data-type='tab-4') Party set
+		.tab-wrapper-food
+			.tab-item-food.active#tab-1
+				.tab-panels
+					ul.tab-navigation.menu-food-bottom
+						li.active
+							a(href="javascript:void(0)" data-type='menu-tab-1') Bento
+						li
+							a(href="javascript:void(0)" data-type='menu-tab-2') Rainbowl
+				.tab-wrapper
+					.tab-item.active#menu-tab-1
+						.big-menu-food
+							.row
+								- for (i=1; i<=10; i++)
+									.col
+										.food
+											.card_img
+												a(href="#")
+													img(src="./img/additional/food-1.png", alt="")
+											.content-food
+												.name-food
+													a(href="") Tô cơm cá hồi
+												.discount
+													p 55.000 VND
+												.price
+													p 62.000 VND
+
+section.service-company-3
+	.form-service
+		.container
+			.row
+				.col-lg-5
+					.form-request
+						h3 Form yếu cầu
+					.desc
+						p Vui lòng điền đầy đủ thông tin form bên cạnh chúng tôi sẽ sớm nhắn được và phản hồi cho bạn.
+				.col-lg-7
+					.wrap-form
+						.row
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text', placeholder="Họ và tên")
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text',placeholder="Email")
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text',placeholder="Tên công ty")
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text',placeholder="Thời gian")
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text',placeholder="Số điện thoại")
+							.form-group.col-12.col-md-6.col-6
+								input.form-control(type='text',placeholder="Ngân sách")
+							.form-group.col-12
+								textarea#inpputTextArea.form-control(rows='3',placeholder="Yêu cầu bữa ăn")
+						.frm-btnwrap
+							.frm-btn
+								a(href="") GỬI
+									span.material-icons trending_flat
+					
+
+
