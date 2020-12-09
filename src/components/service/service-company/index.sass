@@ -69,6 +69,24 @@
 			border: 1px solid #e0e0e0
 			@media screen and ( max-width: 1024.98px )
 				width: 190px
+	.head-menu-tab
+		overflow-x: auto
+		padding-bottom: 15px
+		.tab-panels
+			display: flex
+			border-bottom: 1px solid #e5e5e5
+			justify-content: center
+			align-items: center
+			@media screen and ( max-width: 576px )
+				justify-content: left
+	.head-menu-tab
+		display: none
+		&.active
+			display: block
+	.head-menu-tab
+		display: none
+		&.active
+			display: block
 	.tab-menu
 		overflow: auto
 		padding-bottom: 15px
@@ -159,8 +177,7 @@
 			display: flex
 			justify-content: center
 			align-items: center
-			a
-				display: block
+			.img
 				height: 132px
 				width: 142px
 				max-width: 100%
@@ -169,9 +186,9 @@
 					width: 100%
 					height: 100%
 					object-fit: scale-down
-		.content-food
+		.desc-food
 			padding-top: 15px
-			.name-food
+			.name_food
 				a
 					font-size: 16px
 					padding-top: 6px
@@ -197,6 +214,26 @@
 			border: 1px solid #000
 			@media screen and ( max-width: 576px )
 				padding: 20px
+	.btn-view-more
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-top: 25px
+		a
+			box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
+			background: #ea2531
+			color: #ffffff
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50px
+			width: 160px
+			height: 45px
+			text-transform: uppercase
+			&:hover
+				background: #111111
+				color: #ffffff
+				box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25)
 	
 .service-company-3
 	.form-service
@@ -316,3 +353,6 @@
 				textarea
 					height: 8em
 					padding: 10px 0 0 20px
+
+.Module.Module-411
+	display: none

@@ -13,6 +13,7 @@ $(document).ready(function() {
     searchToggle();
     tabActive();
     tabActiveSmall();
+    selectOption();
     showBackToTop();
 });
 
@@ -22,7 +23,28 @@ function searchToggle() {
         $('.searchbox').toggleClass("show");
     })
 }
-
+const selectOption = () => {
+    let elements = $(".service-company-2").find("select");
+    let getValue = $(".service-company-2 select option:selected").val();
+    $(".service-company-2 select").val("tab-1").trigger("change");
+    $("[data-type=tab-1]").addClass("active");
+    var checkValue = function() {
+        let getValue = $(".service-company-2 select option:selected").val();
+        let getAttr = $(".head-menu-tab").attr("data-type");
+        console.log(getValue);
+        console.log(getAttr);
+        $("[data-type=" + getValue + "]")
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
+        if (getValue == "tab-1") {
+            $("[data-type=pro-tab-463]").trigger("click");
+        } else {
+            $("[data-type=pro-tab-406]").trigger("click");
+        }
+    };
+    elements.on("change keyup", checkValue);
+};
 const mainMenuMobileMapping = new MappingListener({
     selector: ".menu-wrapper",
     mobileWrapper: ".mobile-menu",
