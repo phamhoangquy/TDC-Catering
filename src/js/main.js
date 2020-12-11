@@ -509,6 +509,30 @@ function swiperInit() {
             },
         },
     });
+
+    var MenuSwiper = new Swiper(".other_food .swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: '.nav-arrow-next',
+            prevEl: '.nav-arrow-prev',
+        },
+        breakpoints: {
+            // when window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            990: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        }
+    });
 }
 
 function showBackToTop() {
