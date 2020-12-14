@@ -58,22 +58,7 @@
                                 <div class="right-top-header flex items-center justify-end">
                                     <div class="website-nav-wrap">
                                         <div class="website-nav">
-                                            <ul class="list-reset">
-                                                <li class="dropdown">
-                                                    <a href="#">TVN</a>
-                                                    <div class="dropdown-menu-web">
-                                                        <ul class="list-reset-web">
-                                                            <li>
-                                                                <a href="#">Website Công ty trách nhiệm hữu hạn thực phẩm Tân Việt Nhật</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li><a href="#">Tokyo Deli Sushi</a></li>
-                                                <li><a href="#">Tokyo Deli Home</a></li>
-                                                <li><a href="#">Tokyo Deli Express</a></li>
-                                                <li class="active"><a href="#">Tokyo Deli Catering</a></li>
-                                            </ul>
+                                            <portal:modulewrapper id="mdl414" runat="server" configuremoduleid="414" />
                                         </div>
                                     </div>
                                     <div class="search-wrap">
