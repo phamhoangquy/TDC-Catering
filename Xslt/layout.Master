@@ -218,6 +218,7 @@
         </form>
         <script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
         <script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+        <script src="/Data/Sites/1/skins/default/js/custom.js"></script>
     </body>
 
 
