@@ -15,6 +15,9 @@ $(document).ready(function() {
     tabActiveSmall();
     selectOption();
     showBackToTop();
+    setTimeout(() => {
+        $(".service-company-2 .head-menu-tab.active .menu-food-top li.active a").trigger("click");
+    }, 300);
 });
 
 function searchToggle() {

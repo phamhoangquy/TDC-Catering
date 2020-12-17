@@ -35,36 +35,60 @@
 
 	</xsl:template>
 	<xsl:template match="News" mode="Zone-News-1">
-		<div class="row">
-			<div class="col-lg-8">
-				<div class="swiper-container slide-service-events">
-					<div class="swiper-wrapper">
-						<xsl:apply-templates select="NewsImages"></xsl:apply-templates>
-					</div>
-					<div class="swiper-pagination service-events-pagination"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="content">
-					<div class="item-icon">
-						<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-						</img>
-					</div>
-					<div class="sub-title">
-						<h3><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h3>
-					</div>
-					<div class="description">
-						<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+		<xsl:if test="position()=1">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="swiper-container slide-service-events">
+						<div class="swiper-wrapper">
+							<xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+						</div>
+						<div class="swiper-pagination service-events-pagination"></div>
 					</div>
 				</div>
+				<div class="col-lg-4">
+					<div class="content">
+						<div class="item-icon">
+							<img>
+								<xsl:attribute name="src">
+									<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+							</img>
+						</div>
+						<div class="sub-title">
+							<h3><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h3>
+						</div>
+						<div class="description">
+							<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</xsl:if>
+		<xsl:if test="position()&gt;1">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="swiper-container slide-service-events">
+						<div class="swiper-wrapper">
+							<xsl:apply-templates select="NewsImages"></xsl:apply-templates>
+						</div>
+						<div class="swiper-pagination service-events-pagination"></div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="content">
+						<div class="sub-title">
+							<h3><xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of></h3>
+						</div>
+						<div class="description">
+							<xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+						</div>
+					</div>
+				</div>
+			</div>
+		</xsl:if>
 	</xsl:template>
 	<xsl:template match="NewsImages">
 		<div class="swiper-slide">
