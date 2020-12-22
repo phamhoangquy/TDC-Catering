@@ -61,9 +61,7 @@
                                             <portal:modulewrapper id="mdl414" runat="server" configuremoduleid="414" />
                                         </div>
                                     </div>
-                                    <div class="search-wrap">
-                                        <div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
-                                    </div>
+                                    <div class="search-icon"><span class="mdi mdi-magnify"></span></div>
                                     <div class="language-wrap">
                                         <portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
                                     </div>
@@ -75,6 +73,12 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="block_search">
+                        <div class="search-icon"><span class="ri-close-line"></span></div>
+                        <div class="searchbox">
+                            <portal:modulewrapper id="mdl416" runat="server" configuremoduleid="416" />
                         </div>
                     </div>
                     <div class="offcanvas-wrap">

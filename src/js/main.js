@@ -21,11 +21,12 @@ $(document).ready(function() {
 });
 
 function searchToggle() {
-    $('.search-toggle, .btn-close').click(function() {
+    $('.search-icon').click(function() {
         $(this).toggleClass("click");
-        $('.searchbox').toggleClass("show");
-    })
+        $('.block_search').toggleClass("show");
+    });
 }
+
 const selectOption = () => {
     let elements = $(".service-company-2").find("select");
     let getValue = $(".service-company-2 select option:selected").val();
