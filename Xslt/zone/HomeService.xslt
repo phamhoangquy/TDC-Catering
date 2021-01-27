@@ -45,9 +45,21 @@
 							<xsl:value-of disable-output-escaping="yes" select="Description"></xsl:value-of>
 						</span>
 					</div>
-					<div class="card_img object-fit-img">
+					<div class="bg-shape">
 						<div class="img">
 							<img >
+								<xsl:attribute name="src">
+									<xsl:value-of select="SecondImageUrl"></xsl:value-of>
+								</xsl:attribute>
+								<xsl:attribute name="alt">
+									<xsl:value-of select="Title"></xsl:value-of>
+								</xsl:attribute>
+							</img>
+						</div>
+					</div>
+					<div class="card_img object-fit-img">
+						<div class="img">
+							<img>
 								<xsl:attribute name="src">
 									<xsl:value-of select="ImageUrl"></xsl:value-of>
 								</xsl:attribute>
