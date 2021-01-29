@@ -56,7 +56,7 @@
 								</ul>
 							</div>
 							<div class="icon-contact">
-								<a href="/lien-he">Liên hệ<i class="ri-phone-fill"></i></a>
+								<a href="tel:+028 39 43 15 01">Liên hệ<i class="ri-phone-fill"></i></a>
 								<a href="/lien-he">Đặt hàng<i class="ri-shopping-cart-2-line"></i></a>
 								<a href="/he-thong-cua-hang">Xem địa chỉ gần nhất<i class="ri-map-pin-2-fill"></i></a>
 							</div>
